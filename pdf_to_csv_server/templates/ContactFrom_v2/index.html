@@ -34,7 +34,8 @@
 						UploadSheet
 					</span>
 						
-					<div class="wrap-input2 validate-input" data-validate="Variableis required">
+						{{form.as_p}}
+					<!-- <div class="wrap-input2 validate-input" data-validate="Variableis required">
 						<input class="input2" type="text" name="variable">
 						<span class="focus-input2" data-placeholder="variable"></span>
 					</div>
@@ -49,16 +50,17 @@
 						<span class="focus-input2" data-placeholder="Upload Balance Sheet"></span>
 						<br>
 						<input type="file" name="document">
-					</div>
-
-					<div class="container-contact2-form-btn">
-						<div class="wrap-contact2-form-btn">
-							<div class="contact2-form-bgbtn"></div>
-							<button class="contact2-form-btn">
-								Submit
-							</button>
+					</div> -->
+					{% if not url %}
+						<div class="container-contact2-form-btn">
+							<div class="wrap-contact2-form-btn">
+								<div class="contact2-form-bgbtn"></div>
+								<button class="contact2-form-btn">
+									Submit
+								</button>
+							</div>
 						</div>
-					</div>
+					{% endif %}
 
 					{% if url %}
 						<div class="container-contact2-form-btn">
