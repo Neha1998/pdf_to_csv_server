@@ -23,7 +23,6 @@ from pdf_to_csv_server import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.upload, name='upload'),
-    path('calculate/', views.calculate, name='calculate'),
 ]
 
 if settings.DEBUG:
